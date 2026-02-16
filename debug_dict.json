@@ -1,0 +1,105 @@
+{
+  "metrics": [
+    {
+      "id": "15e89f895b482f9b84ba7274ed18a106",
+      "metric_name": "DriftedColumnsCount(drift_share=0.5)",
+      "config": {
+        "type": "evidently:metric_v2:DriftedColumnsCount",
+        "drift_share": 0.5
+      },
+      "value": {
+        "count": 0.0,
+        "share": 0.0
+      }
+    },
+    {
+      "id": "32bb865e004396989318986fca20adc1",
+      "metric_name": "ValueDrift(column=trip_distance,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "trip_distance",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.054233965332967184
+    },
+    {
+      "id": "f6e3fad8f5b0bc4766dea6099806687e",
+      "metric_name": "ValueDrift(column=fare_amount,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "fare_amount",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.08291069438809871
+    },
+    {
+      "id": "d685959c34b6cdeb99cb54b0265e47be",
+      "metric_name": "ValueDrift(column=tip_amount,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "tip_amount",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.04444455907540127
+    },
+    {
+      "id": "7d630f15834f8c59e4ee21d6b907dc1a",
+      "metric_name": "ValueDrift(column=total_amount,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "total_amount",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.07911784080223704
+    },
+    {
+      "id": "627ecbd85d0104676b00bedba97a4a20",
+      "metric_name": "ValueDrift(column=passenger_count,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "passenger_count",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.04410085549104951
+    },
+    {
+      "id": "93c04a2b893e5f7b4d3a2dc96bf49486",
+      "metric_name": "ValueDrift(column=congestion_surcharge,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "congestion_surcharge",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.0155545093385922
+    },
+    {
+      "id": "64432ea8d99275d20b42175c587d13f7",
+      "metric_name": "ValueDrift(column=tolls_amount,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "tolls_amount",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.04296685261639787
+    },
+    {
+      "id": "64fde5ace2a623cd102f0ba03362142b",
+      "metric_name": "ValueDrift(column=improvement_surcharge,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "improvement_surcharge",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.02572666503916662
+    }
+  ],
+  "tests": []
+}

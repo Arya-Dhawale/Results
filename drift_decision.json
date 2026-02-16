@@ -1,0 +1,52 @@
+{
+  "reference": "NYC Taxi January 2023",
+  "current": "NYC Taxi July 2023",
+  "stat_test": "Kolmogorov-Smirnov",
+  "significance_level": 0.05,
+  "total_features": 8,
+  "drifted_features": 7,
+  "drift_share": 0.875,
+  "dataset_drift": true,
+  "per_feature": {
+    "trip_distance": {
+      "ks_statistic": 0.01906,
+      "p_value": 3e-08,
+      "drifted": true
+    },
+    "fare_amount": {
+      "ks_statistic": 0.03666,
+      "p_value": 0.0,
+      "drifted": true
+    },
+    "tip_amount": {
+      "ks_statistic": 0.02678,
+      "p_value": 0.0,
+      "drifted": true
+    },
+    "total_amount": {
+      "ks_statistic": 0.03342,
+      "p_value": 0.0,
+      "drifted": true
+    },
+    "passenger_count": {
+      "ks_statistic": 0.01598,
+      "p_value": 5.64e-06,
+      "drifted": true
+    },
+    "congestion_surcharge": {
+      "ks_statistic": 0.01126,
+      "p_value": 0.00350396,
+      "drifted": true
+    },
+    "tolls_amount": {
+      "ks_statistic": 0.01084,
+      "p_value": 0.00557501,
+      "drifted": true
+    },
+    "improvement_surcharge": {
+      "ks_statistic": 0.00294,
+      "p_value": 0.98169932,
+      "drifted": false
+    }
+  }
+}
